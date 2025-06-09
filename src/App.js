@@ -9,7 +9,6 @@ import {
   User,
   Phone,
   Home,
-  ArrowLeft,
   Info,
   Weight,
   DollarSign,
@@ -376,7 +375,7 @@ export default function App() {
                             ) {
                               let html =
                                 e.type_state_name === "Certificacion" ||
-                                e.type_state_name == "EN BODEGA ORIGEN"
+                                e.type_state_name === "EN BODEGA ORIGEN"
                                   ? e.explanation
                                       ?.replace(/<button.*?<\/button>/gi, "")
                                       .replace(/<li>Usuario:.*?<\/li>/gi, "")
